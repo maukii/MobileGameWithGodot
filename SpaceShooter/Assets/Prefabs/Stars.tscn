@@ -1,0 +1,51 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Assets/Sprites/Own/T_StarSmall_01 – kopio.png" type="Texture" id=1]
+[ext_resource path="res://Scripts/Star.gd" type="Script" id=2]
+[ext_resource path="res://Assets/Sprites/Own/T_StarBig_01 – kopio.png" type="Texture" id=3]
+
+[node name="Stars" type="Node2D"]
+
+[node name="Stars_Far" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="Stars_far_0" type="Sprite" parent="Stars_Far"]
+position = Vector2( 0, -180 )
+texture = ExtResource( 1 )
+centered = false
+script = ExtResource( 2 )
+
+[node name="Stars_far_1" type="Sprite" parent="Stars_Far"]
+texture = ExtResource( 1 )
+centered = false
+script = ExtResource( 2 )
+
+[node name="Stars_far_2" type="Sprite" parent="Stars_Far"]
+position = Vector2( 0, 180 )
+texture = ExtResource( 1 )
+centered = false
+script = ExtResource( 2 )
+
+[node name="Stars_Close" type="Node2D" parent="."]
+editor/display_folded = true
+
+[node name="Stars_close_0" type="Sprite" parent="Stars_Close"]
+position = Vector2( 0, -180 )
+texture = ExtResource( 3 )
+centered = false
+script = ExtResource( 2 )
+velocity = Vector2( 0, 100 )
+
+[node name="Stars_close_1" type="Sprite" parent="Stars_Close"]
+texture = ExtResource( 3 )
+centered = false
+script = ExtResource( 2 )
+velocity = Vector2( 0, 100 )
+
+[node name="Stars_close_2" type="Sprite" parent="Stars_Close"]
+position = Vector2( 0, 180 )
+texture = ExtResource( 3 )
+centered = false
+script = ExtResource( 2 )
+velocity = Vector2( 0, 100 )
+
